@@ -17,35 +17,37 @@
 
 <body>
 
-  <div class="container-menu">
+  <section class="main-menu">
 
-    <a href="#" class="toggleBox-menu">
-      <span class="icon-menu"></span>
-    </a>
+    <div class="container-menu">
 
-    <ul class="navItems-menu">
-      <li class="li-menu">
-        <a href="#" class="link-menu">
-          <i class="bi bi-bell" style="--i:1"></i>
-        </a>
-      </li>
+      <a href="#" class="toggleBox-menu">
+        <span class="icon-menu"></span>
+      </a>
 
-      <li class="li-menu">
-        <a href="#" class="link-menu">
-          <i class="bi bi-house-door" style="--i:2"></i>
-        </a>
-      </li>
+      <ul class="navItems-menu">
+        <li class="li-menu">
+          <a href="#" class="link-menu">
+            <i class="bi bi-bell" style="--i:1"></i>
+          </a>
+        </li>
 
-      <li class="li-menu">
-        <a href="#" class="link-menu">
-          <i class="bi bi-person" style="--i:3"></i>
-        </a>
-      </li>
+        <li class="li-menu">
+          <a href="#" class="link-menu">
+            <i class="bi bi-house-door" style="--i:2"></i>
+          </a>
+        </li>
 
-    </ul>
-  </div>
+        <li class="li-menu">
+          <a href="#" class="link-menu">
+            <i class="bi bi-person" style="--i:3"></i>
+          </a>
+        </li>
 
-  </div>
+      </ul>
+    </div>
+  </section>
+
   <script>
     var toggleClick = document.querySelector(".toggleBox-menu");
     var container = document.querySelector(".container-menu");
