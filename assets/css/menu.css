@@ -1,0 +1,138 @@
+@import url(https://fonts.google.com/specimen/Montserrat);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body{
+  background-color: #d7d7d7;
+
+}
+
+.container-menu{
+  height: 70px;
+  width: 70px;
+  background-color: #fff;
+  border-radius: 50px;
+  position: absolute;
+  transition: 0.4s ease;
+  box-shadow: 2px 5px 5px rgb(103, 103, 103);
+}
+
+.container-menu.active {
+  height: 85vh;
+  border: 2px solid #ffffff;
+}
+
+.toggleBox-menu{
+  position: relative;
+  display: block;
+  height: 70px;
+  width: 70px;
+  border-radius: 50px;
+} 
+  
+.icon-menu{
+  position: absolute;
+  height: 4px;
+  width: 35px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #000000;
+  border-radius: 50px;
+}
+
+.toggleBox-menu.active .icon-menu{
+  width: 0;
+}
+  
+.icon-menu::before, .icon-menu::after{
+  position: absolute;
+  content: '';
+  height: 4px;
+  width: 35px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #000000;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+  
+.icon-menu::before{
+  top: 12px;
+}
+  
+.icon-menu::after{
+  bottom: 8px;
+}
+  
+.toggleBox-menu.active .icon-menu::before{
+  width: 40px;
+  transform-origin: right;
+  transform: translate(-25px, 4px) rotate(45deg);
+}
+  
+.toggleBox-menu.active .icon-menu::after{
+  width: 40px;
+  transform-origin: right;
+  transform: translate(-25px, -6px) rotate(-45deg);
+}
+
+.navItems-menu{
+  width: 100%;
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+  
+.container-menu.active .navItems-menu{
+  visibility: visible;
+}
+  
+.li-menu{
+  list-style: none;
+  position: relative;
+  top: 14rem;
+}
+  
+.li-menu .link-menu i{
+  position: relative;
+  display: block;
+  font-size: 40px;
+  color: #000000;
+  padding: 5px;
+  width: 100%;
+  text-align: center;
+  transform: scale(0);
+  margin-top: 5px;
+}
+
+.saida .link-menu i{
+  position: relative;
+  display: block;
+  font-size: 40px;
+  color: #000000;
+  width: 100%;
+  text-align: center;
+  transform: scale(0);
+}
+
+.link-menu{ 
+  color: aqua;
+}
+.container-menu.active .navItems-menu .link-menu i{
+  transform: scale(1);
+  transition: 0.4s ease;
+  transition-delay: calc(0.08s * var(--i));
+}
+  
+.container-menu.active .navItems-menu li:hover .link-menu i{
+  transition: 0.2s ease;
+  color: rgba(6, 74, 140, 1);
+}
