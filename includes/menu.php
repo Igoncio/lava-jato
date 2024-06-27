@@ -25,22 +25,29 @@
         <span class="icon-menu"></span>
       </a>
 
+      
+
+
+
       <ul class="navItems-menu">
-        <li class="li-menu">
-          <a href="#" class="link-menu">
-            <i class="bi bi-bell" style="--i:1"></i>
-          </a>
-        </li>
 
         <li class="li-menu">
-          <a href="#" class="link-menu">
+          <a href="main_home.php" class="link-menu">
             <i class="bi bi-house-door" style="--i:2"></i>
           </a>
         </li>
 
+
         <li class="li-menu">
-          <a href="#" class="link-menu">
+          <a href="main_cadastrar_cliente.php" class="link-menu">
             <i class="bi bi-person" style="--i:3"></i>
+          </a>
+        </li>
+
+
+        <li class="li-menu">
+          <a href="main_cadastrar_lavagem.php" class="link-menu">
+            <i class="bi bi-water"></i>
           </a>
         </li>
 

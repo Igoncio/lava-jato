@@ -146,7 +146,7 @@
 .area-placa{
     display: flex;
     flex-direction: row;
-    padding: 9px
+
 }
 
 .area-lavagem{
@@ -162,5 +162,54 @@
     .card {
       display: flex;
       margin-left: 18%;
+    }   
+
+    .area-placa{
+        flex-wrap: wrap;
     }
-  }
+
+    .car-laber{
+        margin-left: 0px;
+    }
+}
+
+
+
+.link-finalizar{
+    display: flex;
+    flex-direction: column-reverse;
+    text-decoration: none;
+    color: inherit;
+}
+
+#icon-finalizar1{
+    color: rgb(115, 192, 0);
+    font-size: 25px;
+}
+
+#icon-finalizar2{
+    color: rgb(1, 121, 196);
+    font-size: 25px;
+}
+
+.area-finalizar{
+    display: flex;
+    flex-direction: row;
+}
+
+#area-finalizar1{
+    display: flex;
+    margin-left: 35px;
+}
+
+.link-finalizar:hover{
+    color: rgb(82, 79, 85);
+}
+
+#icon-finalizar1:hover{
+    color: rgb(82, 79, 85);
+}
+
+#icon-finalizar2:hover{
+    color: rgb(82, 79, 85);
+}
