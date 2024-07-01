@@ -49,7 +49,7 @@ include_once("../includes/menu.php");
                     <button id="cancelar-btn" type="button" class="btn btn-danger">Cancelar</button>
 
                 </div>
-            </div>
+           
 
         </form>
         

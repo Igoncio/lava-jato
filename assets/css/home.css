@@ -159,13 +159,17 @@
 }
 
 @media(max-width: 837px) {
-    .card {
-      display: flex;
-      margin-left: 18%;
-    }   
 
     .area-placa{
         flex-wrap: wrap;
+    }
+
+    .area-lavagem{
+        padding: 0;
+    }
+    
+    .modal-content {
+        height: 80%;
     }
 
     .car-laber{
@@ -173,6 +177,36 @@
     }
 }
 
+@media(max-width: 1148px) {
+
+    .card{
+        margin-top: 6%;
+    }
+
+}
+
+@media(max-width: 912px) {
+
+    .card{
+        margin-top: 8%;
+    }
+
+}
+
+@media(max-width: 712px) {
+
+    .card{
+        margin-top: 10%;
+    }
+
+}
+@media(max-width: 564px) {
+
+    .card{
+        margin-top: 15%;
+    }
+
+}
 
 
 .link-finalizar{
@@ -212,4 +246,17 @@
 
 #icon-finalizar2:hover{
     color: rgb(82, 79, 85);
+}
+
+
+.label-form{
+    margin-top: 24px;
+}
+
+.area-btn{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 15px;
 }

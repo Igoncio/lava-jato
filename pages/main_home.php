@@ -13,7 +13,7 @@ include_once("../includes/menu.php");
 </head>
 <body>
     
-    <section class="main">         
+       
         <div class="card">   
             <h1 id="txt-titulo">Serviços</h1>
             <select name="" id="">
@@ -32,7 +32,7 @@ include_once("../includes/menu.php");
                 </div>
 
 
-                <button id="openModalBtn">Criar Serviço</button>
+                <button class="btn btn-success" id="openModalBtn">Criar Serviço</button>
             </div>
         </section>
 
@@ -63,10 +63,10 @@ include_once("../includes/menu.php");
                 <h2>Criação de Serviço</h2>
                 <form method="POST">
                     <div class="area-placa">
-                        <label for="filter-plate">Filtrar Placa do Carro:</label>
-                        <input type="text" id="filter-plate" placeholder="Digite para filtrar...">
-                        <label class="car-laber" for="car-plate">Placa do Carro:</label>
-                        <select id="car-plate">
+                        <label  class="label-form" for="filter-plate">Filtrar Placa do Carro:</label>
+                        <input  class="input-form"    type="text" id="filter-plate" placeholder="Digite para filtrar...">
+                        <label  class="label-form" for="car-plate">Placa do Carro:</label>
+                        <select class="input-form"  id="car-plate">
                             <option value="NQRE">Seleciona a Placa</option>
                             <option value="SFDAS">SFDAS</option>
                             <option value="EGTW">EGTW</option>
@@ -74,7 +74,7 @@ include_once("../includes/menu.php");
                         </select>
                     </div>
                     <div class="area-lavagem">
-                        <label for="service-name">Tipo de Lavagem:</label>
+                        <label class="label-form" for="service-name">Tipo de Lavagem:</label>
                         <select name="" id="">
                             <option value="#">Escolha a lavagem</option>
                             <option value="#">Lavagem Meia Boca</option>
@@ -82,13 +82,15 @@ include_once("../includes/menu.php");
                             <option value="#">Lavagem de verdade</option>
                         </select>
                     </div>
-                    <button type="submit">Criar</button>
-                    <button type="button" id="cadastrarClienteBtn">Cadastrar Cliente</button>
+                    <div class="area-btn">
+                    <button type="button" class="btn btn-primary">Criar</button>
+                    <button type="button" class="btn btn-light" id="cadastrarClienteBtn">Cadastrar Cliente</button>
+                    </div>
                 </form>
             </div>
         </div>
 
         <script src="../assets/js/home.js"></script>
-    </section>
+
 </body>
 </html>
