@@ -1,0 +1,21 @@
+{
+  "name": "lava-jato",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "express",
+    "express-handlebars"
+  ],
+  "author": "Igor",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "express": "^4.19.2",
+    "express-handlebars": "^7.1.3",
+    "nodemon": "^3.1.4"
+  }
+}
