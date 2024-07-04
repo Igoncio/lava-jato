@@ -23,6 +23,9 @@ app.get('/', function(req, res){
   res.render('home');
 });
 
+// Rota para css
+app.use('/public/assets/css', express.static('./public/assets/css'))
+app.use('/public/assets/js', express.static('./public/assets/js'))
 // Iniciar o servidor
 const PORT = 8081;
 app.listen(PORT, () => {
